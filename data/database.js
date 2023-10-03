@@ -6,7 +6,7 @@ let database;
 
 async function connectToDatabase() {
   const client = await MongoClient.connect("mongodb://localhost:27017");
-  database = client.db("quotes");
+  database = client.db("first-api");
 }
 
 function getDb() {
